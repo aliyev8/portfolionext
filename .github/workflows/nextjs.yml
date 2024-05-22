@@ -38,9 +38,8 @@ jobs:
           node-version: "20"
           cache: 'pnpm'
       
-      - name: Setup pnpm
-        run: |
-          npm install -g pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -73,7 +72,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .next
-      
+
   # Deployment job
   deploy:
     environment:
