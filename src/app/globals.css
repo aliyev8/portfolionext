@@ -3,30 +3,7 @@
 @tailwind utilities;
 
 
-@font-face {
-  font-family: 'avenirBook';
-  src: url("../../public/font/Avenir-Book-01.f766a1c2.ttf") format('truetype');
-}
 
-@font-face {
-  font-family: 'avenirHeavy';
-  src: url("../../public/font/Avenir-Heavy-05.d062c278.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: 'avenirMedium';
-  src: url("../../public/font/Avenir-Medium-09.ad20ffca.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: 'tusker';
-  src: url("../../public/font/TuskerGrotesk-5500Medium.ttf");
-}
-
-@font-face {
-  font-family: 'tusker_semi';
-  src: url("../../public/font/TuskerGrotesk-7600Semibold.otf");
-}
 
 .link-container {
   position: relative;
