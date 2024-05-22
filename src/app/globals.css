@@ -2,32 +2,215 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@font-face {
+  font-family: 'avenirBook';
+  src: url("../../public/font/Avenir-Book-01.f766a1c2.ttf") format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: 'avenirHeavy';
+  src: url("../../public/font/Avenir-Heavy-05.d062c278.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'avenirMedium';
+  src: url("../../public/font/Avenir-Medium-09.ad20ffca.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'tusker';
+  src: url("../../public/font/TuskerGrotesk-5500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'tusker_semi';
+  src: url("../../public/font/TuskerGrotesk-7600Semibold.otf");
+}
+
+.link-container {
+  position: relative;
+  display: inline-block;
+}
+
+.link-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.4) 80%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.link-container:hover .link-overlay {
+  opacity: 1;
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  html {
+    @apply scroll_element;
+  }
+
+  h1 {
+    @apply text-2xl font-bold lg:text-3xl;
+  }
+
+  p {
+    @apply text-center text-lg;
+  }
 }
+
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .container-lg {
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 120px;
+    padding-right: 120px;
   }
+
+
+  .scene_container {
+    filter: none;
+    transition: 250ms all;
+
+  }
+
+  .focus_button:hover ~ div {
+
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .icons svg{
+    display: inline-block;
+  }
+
+
+  .scroll_element::-webkit-scrollbar {
+    width: 4px;
+
+  }
+
+  .scroll_element::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+
+  }
+
+  .scroll_element::-webkit-scrollbar-thumb {
+    background: #E1E4E8;
+    border-radius: 50px;
+
+  }
+
+}
+
+
+
+.text-loader {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: transparent;
+}
+
+.text-loader::before {
+
+  content: '...loading';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, black);
+  animation: slide 0.7s linear infinite;
+  font-size: 60px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation: pulsOut 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
+}
+
+.loader:before {
+  width: 100%;
+  padding-bottom: 100%;
+  box-shadow: inset 0 0 0 1rem #fff;
+  animation-name: pulsIn;
+}
+
+.loader:after {
+  width: calc(100% - 2rem);
+  padding-bottom: calc(100% - 2rem);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+@keyframes pulsIn {
+  0% {
+    box-shadow: inset 0 0 0 1rem #fff;
+    opacity: 1;
+  }
+
+  50%, 100% {
+    box-shadow: inset 0 0 0 0 #fff;
+    opacity: 0;
+  }
+}
+
+@keyframes pulsOut {
+  0%, 50% {
+    box-shadow: 0 0 0 0 #fff;
+    opacity: 0;
+  }
+
+  100% {
+    box-shadow: 0 0 0 1rem #fff;
+    opacity: 1;
+  }
+}
+
+.awesomeContainer,canvas{
+  width: 100% !important;
 }
