@@ -22,6 +22,9 @@ dependencies:
     version: 3.4.5(react-dom@18.3.1)(react@18.3.1)
 
 devDependencies:
+  '@netlify/plugin-nextjs':
+    specifier: ^5.3.0
+    version: 5.3.0
   eslint:
     specifier: ^8
     version: 8.57.0
@@ -146,6 +149,11 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@netlify/plugin-nextjs@5.3.0:
+    resolution: {integrity: sha512-fWsbejUsgsm/y7poir9/Fh/ZYPibPmHMGvuC8Jm6+oBnxt6QPCkir4yVs+A9Q2lFgER4bow1E/53P79dEPwVBQ==}
+    engines: {node: '>=18.0.0'}
     dev: true
 
   /@next/env@14.2.3:
