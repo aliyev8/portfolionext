@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "clean": "rm -rf .next out",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+
   "dependencies": {
     "next": "14.2.3",
+    "next-intl": "^3.14.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-painter": "^0.4.0",
