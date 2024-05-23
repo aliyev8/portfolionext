@@ -8,10 +8,3 @@ NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
-
-# This is a fake plugin, that makes it run npm install
-[[plugins]]
-package = "@netlify/plugin-local-install-core"
-
-[[plugins]]
-package = "../plugin-wrapper"
