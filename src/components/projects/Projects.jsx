@@ -19,16 +19,18 @@ function Projects() {
     const [data, setData] = useState()
     const [loading,setLoading] = useState(true)
 
-    useEffect(() => {
-        fakeData()
-    }, []);
 
 
-    const fakeData = async () => {
+
+    const fakeData =  () => {
         setLoading(true)
         setData(projectDetails)
         setTimeout(() => setLoading(false), 1000)
     }
+
+    useEffect(() => {
+        fakeData()
+    }, []);
 
     return <div className={`h-full text-gray-200 max-sm:px-4 bg-blueTheme-background`}>
 

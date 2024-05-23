@@ -34,10 +34,7 @@ const Indm = ({setProject}) => {
             <img className='max-w-[100%] rounded-md'
                  src="/images/indm/top_bar.webp" alt=""/>
         </Parallax>
-        <Parallax className='max-w-[50%] z-0 shadow-3xl left-0 rounded-md' speed={6}>
-            <img className='rounded-md'
-                 src="/images/indm/connectalert.webp" alt=""/>
-        </Parallax>
+
 
         <Parallax className='max-w-[50%]  z-0 shadow-3xl rounded-md' speed={19}>
             <img className='rounded-md'

@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/header/Header";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const generateMetadata = ({params}) => {
+export const generateMetadata = () => {
 
 
 
@@ -13,10 +13,10 @@ export const generateMetadata = ({params}) => {
         title: 'Portfolio',
         openGraph: {
             title: 'Portfolio',
-            description:'Hello world',
+            description:'Hello friend',
             images: [
                 {
-                    url: '../../public/images/childrensgames.webp',
+                    url: '/images/childrensgames.webp',
                     width: 800,
                     height: 600,
                     alt: 'Portfolio',

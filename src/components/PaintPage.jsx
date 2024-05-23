@@ -16,7 +16,7 @@ function HomePage() {
                 <ReactPainter
                     image={"/images/childrensgames.webp"}
                     width={2800}
-                    render={({ triggerSave, canvas }) => (
+                    render={({  canvas }) => (
                         <div style={{ position: 'relative', width: '100%', height: '100%' }}>
 
                             <div className='flex justify-center items-center text-white cursor-crosshair w-full'

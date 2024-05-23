@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'avenirBook';
+  src: url("../public/font/Avenir-Book-01.f766a1c2.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'avenirHeavy';
+  src: url("../public/font/Avenir-Heavy-05.d062c278.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'avenirMedium';
+  src: url("../public/font/Avenir-Medium-09.ad20ffca.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'tusker';
+  src: url("../public/font/TuskerGrotesk-5500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'tusker_semi';
+  src: url("../public/font/TuskerGrotesk-7600Semibold.otf");
+}
 
 
 .link-container {
@@ -53,7 +77,6 @@
   }
 }
 
-
 @layer utilities {
   .container-lg {
     max-width: 1440px;
@@ -62,44 +85,34 @@
     padding-right: 120px;
   }
 
-
   .scene_container {
     filter: none;
     transition: 250ms all;
-
   }
 
   .focus_button:hover ~ div {
-
     filter: blur(5px);
     transition: filter 0.3s ease-in-out;
   }
 
-  .icons svg{
+  .icons svg {
     display: inline-block;
   }
 
-
   .scroll_element::-webkit-scrollbar {
     width: 4px;
-
   }
 
   .scroll_element::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 10px;
-
   }
 
   .scroll_element::-webkit-scrollbar-thumb {
     background: #E1E4E8;
     border-radius: 50px;
-
   }
-
 }
-
-
 
 .text-loader {
   position: relative;
@@ -109,7 +122,6 @@
 }
 
 .text-loader::before {
-
   content: '...loading';
   position: absolute;
   top: 0;
@@ -129,7 +141,6 @@
     transform: translateX(100%);
   }
 }
-
 
 .loader {
   position: relative;
@@ -169,7 +180,6 @@
     box-shadow: inset 0 0 0 1rem #fff;
     opacity: 1;
   }
-
   50%, 100% {
     box-shadow: inset 0 0 0 0 #fff;
     opacity: 0;
@@ -181,13 +191,12 @@
     box-shadow: 0 0 0 0 #fff;
     opacity: 0;
   }
-
   100% {
     box-shadow: 0 0 0 1rem #fff;
     opacity: 1;
   }
 }
 
-.awesomeContainer,canvas{
-  width: 100% !important;
+.awesomeContainer, canvas {
+  width: 100%;
 }

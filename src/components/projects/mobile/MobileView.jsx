@@ -18,24 +18,24 @@ function MobileView({data}) {
 
                    <div className='flex justify-between items-center flex-row-reverse'>
                        <div
-                           className={`w-10 h-10 flex justify-center items-center font-avenirMedium font-bold text-2xl`}>
+                           className={`w-10 h-10 flex justify-center items-center  font-bold text-2xl`}>
                            <GeneralSkeleton content={item?.order}/>
                        </div>
                        <div
-                           className={` flex justify-start font-bold font-avenirHeavy text-[32px]`}>
+                           className={` flex justify-start font-bold text-[32px]`}>
 
                            <GeneralSkeleton link={item?.link} content={item.name}/>
                        </div>
                    </div>
 
                     <div
-                        className={` flex justify-start text-xl font-light font-avenirBook`}>
+                        className={` flex justify-start text-xl font-light`}>
                         <GeneralSkeleton content={item?.description}/>
                     </div>
 
 
                     <div
-                        className={`flex flex-wrap items-center gap-4 text-sm font-bold font-avenirBook`}>
+                        className={`flex flex-wrap items-center gap-4 text-sm font-bold `}>
                         {
                             item?.technology.map((d, i) => (
                                 <span key={i}><GeneralSkeleton bg={true} content={d}/></span>
