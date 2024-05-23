@@ -28,7 +28,7 @@ function HomePage() {
                 capitalize opacity-80 hover:opacity-100'>
                                             Allahyar Aliyev
                                         </p>
-                                        <h3 className={`font-tusker_semi text-[52px] transition group-hover:text-white capitalize opacity-80
+                                        <h3 className={`font-tusker_semi font-bold text-[52px] transition group-hover:text-white capitalize opacity-80
                hover:opacity-100`}>
                                             Web Developer
                                         </h3>
@@ -38,7 +38,7 @@ function HomePage() {
                                         <div className='transition relative flex justify-center items-center'>
 
                                             <div className='link-container'>
-                                                <Link className={`group-hover:text-white font-tusker_semi text-3xl tracking-wide opacity-80
+                                                <Link className={`group-hover:text-white font-bold font-tusker_semi text-3xl tracking-wide opacity-80
                hover:opacity-100`} href='projects'>
                                                     Projects
                                                 </Link>

@@ -5,24 +5,24 @@ import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const generateMetadata = () => {
+const seoImage = {
 
+    "og_image": "/images/childrensgames.webp",
+}
+export const metadata = {
 
-
-    return {
+    title: 'Portfolio',
+    openGraph: {
         title: 'Portfolio',
-        openGraph: {
-            title: 'Portfolio',
-            description:'Hello friend',
-            images: [
-                {
-                    url: '/images/childrensgames.webp',
-                    width: 800,
-                    height: 600,
-                    alt: 'Portfolio',
-                }
-            ]
-        }
+        description:'Hello friend',
+        images: [
+            {
+                url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1716467939/childrensgames_vkj2qc.webp',
+                width: 800,
+                height: 600,
+                alt: 'img',
+            }
+        ]
     }
 }
 
