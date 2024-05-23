@@ -17,7 +17,7 @@ export const metadata = {
         description:'Hello friend',
         images: [
             {
-                url: 'https://allahyaraliyev.com/images/childrensgames_vkj2qc.webp',
+                url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1716474439/seo_sfjtb1.webp',
                 width: 800,
                 height: 600,
                 alt: 'img',
