@@ -22,7 +22,8 @@ function HomePage() {
                             <div className='flex justify-center items-center text-white cursor-crosshair w-full'
                                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
                                 <div className="awesomeContainer">{canvas}</div>
-                                <div className='absolute left-[20%] flex justify-center w-full items-center max-sm:items-start '>
+                                <div className='absolute left-[20%] flex justify-center w-full items-center
+                                 max-sm:items-start  max-sm:left-0'>
                                     <div className={`group flex flex-col gap-4 w-[90%] max-sm:w-[50%]  h-full justify-center text-start`}>
                                         <p className='text-start font-tusker text-4xl tracking-wide group-hover:text-white
                 capitalize opacity-80 hover:opacity-100'>

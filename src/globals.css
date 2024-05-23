@@ -78,6 +78,11 @@
 }
 
 @layer utilities {
+
+  .awesomeContainer, canvas {
+    @apply w-[100%] max-sm:w-auto max-md:w-auto;
+  }
+
   .container-lg {
     max-width: 1440px;
     margin: auto;
@@ -197,6 +202,4 @@
   }
 }
 
-.awesomeContainer, canvas {
-  width: 100%;
-}
+
