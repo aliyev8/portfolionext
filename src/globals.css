@@ -65,7 +65,7 @@
 
 @layer base {
   html {
-    @apply scroll_element;
+    @apply scroll_element scroll-smooth;
   }
 
   h1 {
@@ -79,8 +79,10 @@
 
 @layer utilities {
 
+
+
   .awesomeContainer, canvas {
-    @apply w-[100%] max-sm:w-auto max-md:w-auto;
+    @apply !w-full max-sm:!w-auto max-md:!w-auto;
   }
 
   .container-lg {

@@ -40,7 +40,7 @@ function Projects() {
                     <span className="loader"></span>
                 </div> :
               <ParallaxProvider>
-                  <div className={`flex w-full  relative  bg-transparent max-sm:flex-col max-sm:pt-0 container-lg max-sm:p-4`}>
+                  <div className={`flex w-full relative bg-transparent max-sm:flex-col max-sm:pt-0 container-lg max-sm:p-4`}>
                       <div className='hidden max-sm:block'>
                           <MobileView data={data}/>
                       </div>
