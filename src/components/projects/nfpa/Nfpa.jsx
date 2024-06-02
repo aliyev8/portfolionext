@@ -7,19 +7,22 @@ const Nfpa = ({setProject}) => {
 
 
     const enterProject = () => {
-        setProject(5)
+        // setProject(1)
 
     }
     const exitProject = () => {
-        setProject(4)
+        // setProject(2)
 
     }
 
     const handleScroll = (progress) => {
         const scroll = Math.round(progress * 10)
-
-        if (scroll === 5) {
+        console.log(scroll)
+        if (scroll === 4) {
             setProject(5)
+        }
+        if (scroll===3){
+            setProject(4)
         }
     }
 
@@ -29,7 +32,7 @@ const Nfpa = ({setProject}) => {
         onProgressChange={(progress) => handleScroll(progress)}
         onEnter={enterProject}
         onExit={exitProject}
-        speed={5}>
+        speed={-5}>
       <div className='flex gap-6'>
           <Parallax className='max-h-[130px] max-w-[100%] z-40 shadow-3xl rounded-2xl' speed={-10}>
               <img className=' rounded-md'
