@@ -12,7 +12,7 @@ function HomePage() {
         <div className={`h-screen z-10 relative max-sm:flex max-sm:h-dvh max-sm:w-full max-sm:pt-0 max-sm:p-0`}>
 
 
-            <div className='w-full h-full overflow-hidden max-sm:px-4'>
+            <div className='w-full h-full overflow-hidden max-sm:px-4 bg_gradient'>
                 <ReactPainter
                     image={"/images/childrensgames.webp"}
                     width={2800}

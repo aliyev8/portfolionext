@@ -7,25 +7,26 @@ import Link from "next/link";
 function Header() {
 
     const [scrollHeader,setScrollHeader]= useState(true)
+    const [lastScrollTop, setLastScrollTop] = useState(0);
 
 
     const handleScroll = () => {
-        const scrollPosition = window.scrollY; // => scroll position
-        if (scrollPosition > 44){
-            setScrollHeader(false)
-        }else {
-            setScrollHeader(true)
+        const currentScrollTop = window.scrollY;
+
+        if (currentScrollTop > lastScrollTop) {
+            currentScrollTop > 44 && setScrollHeader(false);
+        } else {
+            setScrollHeader(true);
         }
-        console.log(Math.round(scrollPosition));
+        setLastScrollTop(currentScrollTop);
     };
 
     useEffect(() => {
-        handleScroll();
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [lastScrollTop]);
 
     return <div className={`transition max-sm:fixed max-sm:top-0 max-sm:z-50 max-sm:w-full w-full 
      py-4 h-[80px] fixed top-0 w-ful z-50 ${scrollHeader ? 'h-[80px] translate-y-0' : '-translate-y-20'}

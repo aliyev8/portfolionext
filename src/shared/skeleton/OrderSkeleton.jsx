@@ -27,7 +27,7 @@ function GeneralSkeleton({content,bg,link,project}) {
             <Link
                 target="_blank"
                 className={`transition ${loading ? 'opacity-0 scale-0' : " opacity-100 scale-100"}`} href={link}>
-                {/*<LinkIcon/>*/}
+                <img src='/images/link.svg'/>
             </Link>
         }
     </span>

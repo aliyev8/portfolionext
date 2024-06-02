@@ -42,13 +42,19 @@ export default function Social() {
             logo:'/images/social/gm.svg',
             href:'mailto:allahyaraliyev3@gmail.com',
             mail:[]
+        },
+        {
+            name:'npm',
+            logo:'/images/social/npm.svg',
+            href:'https://www.npmjs.com/settings/aliyev_8/packages',
+            simple:[]
         }
     ]
     return <div className='flex gap-4'>
 
         {
             social.map((sc,key) => (
-              <div key={key} className='group'>
+              <div key={key} className='group flex items-center'>
 
                   {
                       sc.fav && <div className='invisible grid grid-cols-4 gap-2 mb-8 opacity-0 absolute bottom-0 pb-8 left-[35%]
@@ -91,7 +97,7 @@ export default function Social() {
 
                   <Link  href={sc.href} target='_blank' className='relative group-item'>
 
-                      <Image src={sc.logo} alt={sc.name} width={100} height={100} className='w-[40px] opacity-60
+                      <Image src={sc.logo} alt={sc.name} width={100} height={100} className='w-[34px] opacity-60
                   transition hover:opacity-100 '/>
                   </Link>
               </div>
