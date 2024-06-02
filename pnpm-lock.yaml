@@ -23,9 +23,6 @@ dependencies:
   react-scroll-parallax:
     specifier: ^3.4.5
     version: 3.4.5(react-dom@18.3.1)(react@18.3.1)
-  react-simple-mobile-header:
-    specifier: ^0.0.3
-    version: 0.0.3(react-dom@18.3.1)(react@18.3.1)
 
 devDependencies:
   '@netlify/plugin-nextjs':
@@ -3620,16 +3617,6 @@ packages:
       react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
     dependencies:
       parallax-controller: 1.7.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    dev: false
-
-  /react-simple-mobile-header@0.0.3(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-SK9ze3Mg0iIwkOPaQh/6bUzOYFAs/t6M89OkYR4QElK+YH/yvNvOUqlfOgD0HqtvPoSpKOXRUo7/ZY4/pOJSTQ==}
-    peerDependencies:
-      react: ^17.0.2
-      react-dom: ^17.0.2
-    dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     dev: false
