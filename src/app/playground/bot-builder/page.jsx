@@ -9,7 +9,7 @@ export const metadata = {
         description:'This is the demo of a Big project',
         images: [
             {
-                url: 'https://allahyaraliyev.com/playground/bot-builder',
+                url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1718792000/seob_rpvr4d.webp',
                 width: 800,
                 height: 400,
                 alt: 'img',
