@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function BoBuilderPage() {
 
-    return <div className='h-screen'>
+    return <div className='h-screen '>
 
         <Flow/>
     </div>

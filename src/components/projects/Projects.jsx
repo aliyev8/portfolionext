@@ -33,7 +33,7 @@ function Projects() {
         fakeData()
     }, []);
 
-    return <div className={`h-full text-gray-200 max-sm:px-4 bg_gradient`}>
+    return <div className={`h-full text-gray-200 max-sm:px-4 bg-blueTheme-background`}>
 
 
         {
