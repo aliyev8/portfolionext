@@ -42,6 +42,12 @@ module.exports = {
           text:'#235a68',
           background:'#011926',
           other:'#00e980'
+        },
+        gray:{
+          900:"#f8f9fb"
+        },
+        green:{
+          900:"#cef2e8"
         }
       },
     },

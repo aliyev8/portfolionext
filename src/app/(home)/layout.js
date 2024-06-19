@@ -1,15 +1,11 @@
 import { Inter } from "next/font/google";
-import "../globals.css";
+import "../../globals.css";
 import Header from "@/components/header/Header";
 
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-const seoImage = {
-
-    "og_image": "/images/childrensgames.webp",
-}
 export const metadata = {
 
     title: 'Portfolio',

@@ -38,12 +38,16 @@ function HomePage() {
                                     <div className='group flex justify-start h-full items-center w-full max-sm:items-start max-sm:justify-start'>
                                         <div className='transition relative flex justify-center items-center'>
 
-                                            <div className='link-container'>
+                                            <div className='link-container flex flex-col gap-2'>
                                                 <Link className={`group-hover:text-white font-bold font-tusker_semi text-3xl tracking-wide opacity-80
                hover:opacity-100`} href='projects'>
                                                     Projects
                                                 </Link>
 
+                                                <Link className={`group-hover:text-white font-bold font-tusker_semi text-3xl tracking-wide opacity-80
+               hover:opacity-100`} href='playground'>
+                                                    Playground
+                                                </Link>
                                             </div>
 
                                         </div>

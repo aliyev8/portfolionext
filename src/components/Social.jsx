@@ -81,16 +81,13 @@ export default function Social() {
                           <div style={{ overflow: 'hidden' }}
                                className='rounded-md scale-0 group-hover:scale-100 transition duration-500'
                           >
-                              <iframe
-                                  src="https://open.spotify.com/embed/artist/73mSg0dykFyhvU96tb5xQV?utm_source=generator"
-                                  width="400"
-                                  height="352"
-                                  frameBorder="0"
-                                  allowFullScreen=""
-                                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                  loading="lazy"
-                                  style={{ border: 'none' }}
-                              ></iframe>
+                              <iframe style={{borderRadius:12}}
+                                      src="https://open.spotify.com/embed/track/1jUkHIMc7UaJQuzWe5Iop2?utm_source=generator"
+                                      width="100%" height="152" frameBorder="0" allowFullScreen=""
+                                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                      loading="lazy">
+
+                              </iframe>
                           </div>
                       </div>
                   }
