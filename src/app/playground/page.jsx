@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import '../../globals.css'
+import Header from "@/components/header/Header";
 export const metadata = {
 
     title: 'Playground',
@@ -18,19 +19,18 @@ export const metadata = {
     }
 }
 export default function PlaygroundPage(){
-    return <div className='flex flex-col  h-screen pt-32 bg-blueTheme-background  text-white'>
-        <div className='container-lg w-full flex justify-start items-center gap-16'>
-            <Link href='/'>
-                <img src="/images/playgorund/builder/whiteArrow.svg" className='scale-95 hover:scale-100 transition' alt=""/>
-            </Link>
-            <h1 className='text-center m-auto'>Playground</h1>
+    return <div className='flex flex-col  h-screen pt-32 bg-blueTheme-background  text-white max-sm:pt-4'>
+        <Header/>
+        <div className='container-lg w-full flex justify-start items-center gap-16 max-sm:gap-4 max-sm:px-8'>
+
+            <h1 className='text-center m-auto max-sm:mt-24'>Playground</h1>
         </div>
 
 
-        <div className='grid grid-cols-3 p-16  rounded-md h-full opacity-80 mt-8 container-lg'>
+        <div className='grid grid-cols-3 p-16  rounded-md h-full opacity-80 mt-8 container-lg max-sm:grid-cols-1'>
 
             <Link href='/playground/bot-builder'
-                  className='transition group hover:shadow-sm overflow-hidden max-h-[280px]
+                  className='transition group hover:shadow-sm overflow-hidden max-h-[280px] max-sm:max-h-40
                   border border-gray-100 rounded-sm bg-white'
             >
                 <Image src='/images/builder/createFlow.webp'
@@ -38,7 +38,7 @@ export default function PlaygroundPage(){
                        alt='cover'
                        className='group-hover:scale-105 transition w-full'
                  />
-                <p className='flex p-4 text-gray-800 font-medium text-xl'>
+                <p className='flex p-4 text-gray-800 font-medium text-xl max-sm:w-full max-sm:flex max-sm:justify-center'>
                     Bot Builder
                 </p>
             </Link>

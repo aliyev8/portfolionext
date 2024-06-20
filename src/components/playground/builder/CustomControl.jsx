@@ -10,7 +10,9 @@ export default function CustomControl() {
     const {  zoomIn, zoomOut } = useReactFlow();
 
 
-    return <div className="absolute  left-16 bottom-8 bg-white flex items-center gap-4 px-6 py-3 rounded-lg z-10">
+    return <div className="absolute  left-16 bottom-8 bg-white flex items-center gap-4 px-6 py-3 rounded-lg z-10
+    max-sm:left-4
+    ">
         <button
             onClick={() => zoomOut({ duration: 800 })}
             className="control_bar__zoom_out"

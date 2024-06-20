@@ -17,6 +17,7 @@ import CustomControl from "@/components/playground/builder/CustomControl";
 import MyModal from "@/shared/modals/DefaultModal";
 import GreenEdge from "@/components/playground/builder/CustomEdge";
 import ConnectionLine from "@/components/playground/builder/ConnectionLine";
+import MobileSidebar from "@/components/playground/builder/MobileSidebar";
 
 
 const connectionNodeIdSelector = (state) => state.connectionNodeId;
@@ -219,6 +220,8 @@ const Flow = () => {
                                 alt=""
                             />
                         </Link>
+
+                        <MobileSidebar selectedNode={selectNode} setSelectedNode={setSelectNode} isClose={isClose} setIsClose={setIsClose}/>
                     </div>
                     <ReactFlow
                         nodes={nodes}
@@ -244,6 +247,7 @@ const Flow = () => {
                     </ReactFlow>
                 </div>
                 <Sidebar selectedNode={selectNode} setSelectedNode={setSelectNode} isClose={isClose} setIsClose={setIsClose}/>
+
             </ReactFlowProvider>
         </div>
     );
