@@ -1,4 +1,5 @@
 'use client'
+
 import Link from "next/link";
 import {useState} from "react";
 import {getFile} from "csv-list";
@@ -7,7 +8,7 @@ import {getFile} from "csv-list";
 
 
 
-export default function csvPage() {
+export default function CsvPage() {
 
     const [file,setFile] = useState(null)
 
