@@ -29,7 +29,8 @@ function MouseMove() {
                 style={{
                     background: `radial-gradient(180px at ${position.x}px ${position.y}px, rgba(26, 90, 200, 0.200), transparent 90%)`,
                 }}
-            ></div>
+            />
+
             <PaintPage />
 
             <div className='fixed bottom-10 z-40 w-full flex justify-center text-white'>

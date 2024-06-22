@@ -18,15 +18,11 @@ function Projects() {
 
     const [project, setProject] = useState(0)
     const [data, setData] = useState()
-    const [loading,setLoading] = useState(true)
-
-
-
 
     const fakeData =  () => {
-        setLoading(true)
+
         setData(projectDetails)
-        setTimeout(() => setLoading(false), 1000)
+
     }
 
     useEffect(() => {
@@ -35,11 +31,6 @@ function Projects() {
 
     return <div className={`h-full text-gray-200 max-sm:px-4 bg-blueTheme-background`}>
 
-
-        {
-            loading ? <div className={`h-dvh flex justify-center items-center font-avenirMedium font-bold`}>
-                    <span className="loader"></span>
-                </div> :
               <ParallaxProvider>
                   <div className={`flex w-full relative bg-transparent max-sm:flex-col max-sm:pt-0 container-lg max-sm:p-4`}>
                       <div className='hidden max-sm:block'>
@@ -94,7 +85,7 @@ function Projects() {
 
                   </div>
               </ParallaxProvider>
-        }
+
     </div>
 }
 

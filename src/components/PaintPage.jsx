@@ -48,6 +48,11 @@ function HomePage() {
                hover:opacity-100`} href='playground'>
                                                     Playground
                                                 </Link>
+
+                                                <Link className={`group-hover:text-white font-bold font-tusker_semi text-3xl tracking-wide opacity-80
+               hover:opacity-100`} href='packages'>
+                                                    Packages
+                                                </Link>
                                             </div>
 
                                         </div>
