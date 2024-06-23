@@ -33,7 +33,7 @@ function MouseMove() {
 
             <PaintPage />
 
-            <div className='fixed bottom-10 z-40 w-full flex justify-center text-white'>
+            <div className='fixed bottom-10 right-[10%] z-40  flex justify-end text-white'>
                 <Social/>
             </div>
         </div>

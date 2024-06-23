@@ -29,7 +29,7 @@ export default function Social() {
             simple:[]
         }
     ]
-    return <div className='flex gap-4'>
+    return <div className='flex gap-4 max-sm:flex-col'>
 
         {
             social.map((sc,key) => (
