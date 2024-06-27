@@ -61,7 +61,7 @@ export default function CsvPage() {
         <div className='container-lg h-screen max-sm:px-4 overflow-hidden'>
           <div className='p-12 max-sm:p-8'>
               <Link href='/packages' className='hover:scale-105 transition'>
-                  <img src="/images/playgorund/builder/whiteArrow.svg" alt=""/>
+                  <img src="/images/playground/builder/whiteArrow.svg" alt=""/>
               </Link>
 
               <Link href='https://www.npmjs.com/package/csv-list' target='_blank'>

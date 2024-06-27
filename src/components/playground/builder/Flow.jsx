@@ -52,7 +52,7 @@ function Message({data,id}) {
         />
         <div className='flex justify-between w-full px-4 items-center bg-gray-900 rounded-t-sm'>
             <span className='text-black text-[12px] font-medium py-1'>{data.name}</span>
-            <img src="/images/playgorund/builder/message.svg" alt="message" width={16}/>
+            <img src="/images/playground/builder/message.svg" alt="message" width={16}/>
         </div>
 
         <div className='p-4 text-sm font-light'>
@@ -216,7 +216,7 @@ const Flow = () => {
                     <div className='builder_header px-8'>
                         <Link href='/' className='underline text-white cursor-pointer z-40'>
                             <img
-                                src="/images/playgorund/builder/arrow.svg"
+                                src="/images/playground/builder/arrow.svg"
                                 alt=""
                             />
                         </Link>

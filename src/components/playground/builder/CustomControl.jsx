@@ -17,7 +17,7 @@ export default function CustomControl() {
             onClick={() => zoomOut({ duration: 800 })}
             className="control_bar__zoom_out"
         >
-            <img src="/images/playgorund/builder/zoomOut.svg" alt="zoom-out"/>
+            <img src="/images/playground/builder/zoomOut.svg" alt="zoom-out"/>
         </button>
         <span className="control_bar__current_zoom">
         {Math.floor(transform[2].toFixed(2) * 111 - 11)} %
@@ -26,7 +26,7 @@ export default function CustomControl() {
             onClick={() => zoomIn({ duration: 800 })}
             className="control_bar__zoom_in"
         >
-            <img src="/images/playgorund/builder/zoomIn.svg" alt="zoom-in"/>
+            <img src="/images/playground/builder/zoomIn.svg" alt="zoom-in"/>
         </button>
     </div>
 }

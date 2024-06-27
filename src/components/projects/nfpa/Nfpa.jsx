@@ -17,7 +17,7 @@ const Nfpa = ({setProject}) => {
 
     const handleScroll = (progress) => {
         const scroll = Math.round(progress * 10)
-        console.log(scroll)
+
         if (scroll === 4) {
             setProject(5)
         }

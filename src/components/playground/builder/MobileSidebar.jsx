@@ -31,7 +31,7 @@ export default function MobileSidebar ({selectedNode,setSelectedNode,isClose,set
               <div className="dndnode input h-[100px] text-sm flex flex-col items-center mt-8"
                    onDragStart={(event) => onDragStart(event, 'message')} draggable>
 
-                  <img src="/images/playgorund/builder/message.svg" alt="message" width={60}/>
+                  <img src="/images/playground/builder/message.svg" alt="message" width={60}/>
                   <span>Message</span>
               </div>
           </aside>

@@ -16,7 +16,7 @@ export default function AddNode() {
             <div className="dndnode input h-[100px] text-sm flex flex-col items-center"
                  onDragStart={(event) => onDragStart(event, 'message')} draggable>
 
-                <img src="/images/playgorund/builder/message.svg" alt="message" width={60}/>
+                <img src="/images/playground/builder/message.svg" alt="message" width={60}/>
                 <span>Message</span>
             </div>
 
@@ -24,7 +24,7 @@ export default function AddNode() {
             {/*<div className="dndnode input h-[100px] text-sm flex flex-col items-center"*/}
             {/*     onDragStart={(event) => onDragStart(event, 'input')} draggable>*/}
 
-            {/*    <img src="/images/playgorund/builder/messages.svg" alt="message" width={60}/>*/}
+            {/*    <img src="/images/playground/builder/messages.svg" alt="message" width={60}/>*/}
             {/*    <span>Request data</span>*/}
             {/*</div>*/}
         </div>

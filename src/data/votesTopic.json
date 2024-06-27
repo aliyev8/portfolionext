@@ -1,0 +1,19 @@
+{
+  "topics":  [
+    {
+      "name":"All topics",
+      "id":0,
+      "color":"#000"
+    },
+    {
+      "name":"Other",
+      "id":1,
+      "color":"#8c72d3"
+    },
+    {
+      "name":"New",
+      "id":2,
+      "color":"#41b0bf"
+    }
+  ]
+}
