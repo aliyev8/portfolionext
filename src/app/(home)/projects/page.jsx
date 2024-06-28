@@ -1,4 +1,5 @@
 import Projects from "@/components/projects/Projects";
+import Header from "@/components/header/Header";
 
 export const metadata = {
 
@@ -18,6 +19,7 @@ export const metadata = {
 }
 export default function projectPage(){
     return <div>
+        <Header/>
         <Projects/>
     </div>
 }
