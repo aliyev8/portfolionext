@@ -40,20 +40,23 @@ export default function PlaygroundPage(){
         </div>
 
 
-        <div className='grid grid-cols-3 p-16 gap-8  rounded-md h-full opacity-80 mt-8 container-lg max-sm:grid-cols-1'>
+        <div className='grid grid-cols-3 p-16 gap-8  rounded-md h-full opacity-80 mt-8 container-lg max-sm:grid-cols-1
+        max-sm:px-16'>
 
             {
                 cards.map(({name, path, img}) => (
                     <Link href={`/playground/${path}`}
-                          className='transition group hover:shadow-sm overflow-hidden max-h-[250px] max-sm:max-h-40
-                  border border-gray-100 rounded-sm bg-white'
+                          className='transition group hover:shadow-sm overflow-hidden max-h-[200px] max-sm:max-h-40
+                  border border-gray-100 rounded-md bg-white flex justify-center items-center relative group'
                     >
                         <Image src={img}
                                width={500} height={500}
                                alt='cover'
-                               className='group-hover:scale-105 transition w-full h-[180px]'
+                               className='group-hover:scale-105 transition w-full h-[180px] blur-0 hover:blur-[1px]'
                         />
-                        <p className='flex p-4 text-gray-800 font-medium text-xl max-sm:w-full max-sm:flex max-sm:justify-center'>
+                        <p className='flex p-4 text-gray-800 font-semibold text-xl max-sm:w-full max-sm:flex
+                        max-sm:justify-center absolute tracking-wide opacity-0 group-hover:opacity-100 transition
+                         max-sm:opacity-100'>
                             {name}
                         </p>
                     </Link>
