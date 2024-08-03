@@ -31,15 +31,8 @@
   "id": 4,
   "order": "05",
   "name":"Art Tower",
-  "technology":["Vite","React","Tailwind","Axios"],
-  "description":"An engineering company that builds world-class facilities",
+  "technology":["Next.js","Tailwind CSS"],
+  "description":"",
   "link":"https://arttower.az/"
-},{
-    "id": 5,
-    "order": "06",
-    "name":"NFPA",
-    "technology":["Next.js","Tailwind"],
-    "description":"An Fire Protection Company",
-    "link":"https://nfpa.az/az"
-  }
+}
 ]

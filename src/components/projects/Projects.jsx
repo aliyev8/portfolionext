@@ -11,7 +11,7 @@ import Indm from "./indm/Indm.jsx";
 import ArtTower from "./art-tower/ArtTower.jsx";
 import MobileView from "./mobile/MobileView.jsx";
 import {ParallaxProvider} from "react-scroll-parallax";
-import Nfpa from "@/components/projects/nfpa/Nfpa";
+
 
 function Projects() {
 
@@ -74,13 +74,13 @@ function Projects() {
                           }
                       </section>
                       <div
-                          className={`w-[65%]  ml-[45%]  max-sm:hidden  relative max-md:w-[80%] max-md:ml-[34%] h-[670vh]`}>
+                          className={`w-[65%]  ml-[45%]  max-sm:hidden  relative max-md:w-[80%] max-md:ml-[34%] h-[600vh]`}>
                           <Builder setProject={setProject}/>
                           <AdminPanel setProject={setProject}/>
                           <Vote setProject={setProject}/>
                           <Indm setProject={setProject}/>
                           <ArtTower setProject={setProject}/>
-                          <Nfpa setProject={setProject}/>
+
                       </div>
 
                   </div>
