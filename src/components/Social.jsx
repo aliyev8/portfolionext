@@ -21,12 +21,6 @@ export default function Social() {
             logo:'/images/social/gm.svg',
             href:'mailto:allahyaraliyev3@gmail.com',
             mail:[]
-        },
-        {
-            name:'npm',
-            logo:'/images/social/npm.svg',
-            href:'https://www.npmjs.com/settings/aliyev_8/packages',
-            simple:[]
         }
     ]
     return <div className='flex gap-4 max-sm:flex-col'>
