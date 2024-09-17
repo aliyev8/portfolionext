@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import ThemeSwitch from "@/components/ThemeSwitcher";
 
 
 
@@ -10,6 +11,9 @@ function HomePage() {
     return (
         <div className={`h-screen z-10 relative max-sm:flex max-sm:h-dvh max-sm:w-full max-sm:pt-0 max-sm:p-0`}>
 
+            {/*<div className='absolute top-0 w-full p-8 flex justify-end'>*/}
+            {/*    <ThemeSwitch/>*/}
+            {/*</div>*/}
 
             <div className='w-full h-full overflow-hidden max-sm:px-4 bg-blueTheme-background'>
                 <div style={{ position: 'relative', width: '100%', height: '100%' }}>
