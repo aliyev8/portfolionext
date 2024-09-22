@@ -27,9 +27,10 @@ function MouseMove() {
             <div
                 className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute max-sm:hidden"
                 style={{
-                    background: `radial-gradient(180px at ${position.x}px ${position.y}px, rgba(26, 90, 200, 0.200), transparent 90%)`,
+                    background: `radial-gradient(180px at ${position.x}px ${position.y}px, rgba(26, 90, 200, 0.2), rgba(0, 0, 0, 0.3) 90%)`
                 }}
             />
+
 
             <PaintPage />
 
