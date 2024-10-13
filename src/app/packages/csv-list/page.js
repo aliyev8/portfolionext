@@ -79,7 +79,7 @@ export default function CsvPage() {
                <div className='pt-12 flex justify-center'>
 
                    {
-                       file ? <code className='bg-white p-4'>
+                       file ? <code className='bg-black text-white p-4'>
                            {JSON.stringify(file)}
                        </code> :  <div className='flex items-center bg-white border border-dashed border-[#d2c9ff] rounded-md
                    text-[#a7aebb] flex-col text-sm font-medium justify-center mt-3 transition h-[300px] w-[50%] max-sm:w-full'

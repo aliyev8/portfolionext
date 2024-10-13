@@ -3,6 +3,7 @@
 import PaintPage from "./PaintPage"
 import { useState, useEffect } from "react";
 import Social from "@/components/Social";
+import HomePage from "./PaintPage";
 
 function MouseMove() {
     const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -32,7 +33,7 @@ function MouseMove() {
             />
 
 
-            <PaintPage />
+            <HomePage />
 
             <div className='fixed bottom-10 right-[10%] z-40  flex justify-end text-white'>
                 <Social/>
