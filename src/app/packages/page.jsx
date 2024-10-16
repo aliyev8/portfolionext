@@ -21,6 +21,15 @@ export default function PackagesPage(){
                    </div>
                     <span className='font-medium text-xl py-1 pl-2 flex bg-red-800 text-white'>csv-list</span>
                 </Link>
+
+                <Link target='_blank' href='https://www.npmjs.com/package/multi-date-picker' className='bg-white flex flex-col gap-4 group rounded-md shadow-sm' >
+                    <div className='flex justify-center overflow-hidden'>
+                        <Image src='/images/social/npm.svg' width={300} height={300}
+                               className='w-[60%] pt-8 group-hover:scale-105 transition'
+                        />
+                    </div>
+                    <span className='font-medium text-xl py-1 pl-2 flex bg-red-800 text-white'>multi-date-picker</span>
+                </Link>
             </div>
         </div>
     </div>
