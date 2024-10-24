@@ -11,10 +11,10 @@ export const metadata = {
     title: 'My Packages',
     openGraph: {
         title: 'My Packages',
-        description:'Hello friend',
+        description:'Hello World',
         images: [
             {
-                url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1718979185/npm_oj8agm.svg',
+                url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1716474439/seo_sfjtb1.webp',
                 width: 800,
                 height: 600,
                 alt: 'img',

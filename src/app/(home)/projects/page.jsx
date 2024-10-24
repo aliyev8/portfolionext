@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Projects',
     openGraph: {
         title: 'Projects',
-        description:'Hello friend',
+        description:'Hello World',
         images: [
             {
                 url: 'https://res.cloudinary.com/dawsyfhbt/image/upload/v1716474439/seo_sfjtb1.webp',
