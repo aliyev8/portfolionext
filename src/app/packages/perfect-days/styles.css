@@ -1,0 +1,112 @@
+.calendar_container{
+    position: relative;
+
+
+
+    .calendar {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 340px;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        transition: all 300ms;
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-bottom: 1px solid #ccc;
+            border-radius: 8px 8px 0 0;
+
+            .calendar-header-buttons{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                &button {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    padding: 0 10px;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: #007bff;
+                    }
+                }
+            }
+
+
+        }
+
+        .calendar-days-of-week {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e6e6e6;
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .day-of-week {
+            flex: 1;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .calendar-days {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+
+            .day {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+
+                &.selected {
+                    background-color: #007bff;
+                    color: white;
+                }
+
+                &.in-range {
+                    background-color: #c8e6c9;
+                    color: #333;
+                }
+
+                &:not(.disabled):hover {
+                    background-color: #e2e2e2;
+                }
+            }
+
+            .day.current-day {
+                background-color: #4caf50;
+                color: white;
+            }
+
+            .day.disabled {
+                background-color: #1a1a1a;
+                color: #666;
+                cursor: not-allowed;
+            }
+
+            .day.disabled:hover {
+                background-color: #1a1a1a;
+                color: #666;
+            }
+        }
+    }
+
+
+}

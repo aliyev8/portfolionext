@@ -258,3 +258,44 @@
 .react-flow__attribution{
   display: none;
 }
+
+
+.open_calendar{
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden_calendar{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.calendar_preview{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 340px;
+
+  & button{
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 6px;
+
+    &:disabled{
+      background-color: rgb(128, 128, 128);
+      color: #c8c9d0;
+    }
+  }
+
+  & input{
+    display: flex;
+    padding: 0 8px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px dashed #007bff;
+    width: 100%;
+
+  }
+
+}

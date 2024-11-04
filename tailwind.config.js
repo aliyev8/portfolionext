@@ -30,7 +30,8 @@ module.exports = {
     extend: {
       boxShadow: {
         '3xl': 'rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px',
-        '2xl':"rgba(0, 0, 0, 0.15) 0px 20px 20px 0px"
+        '2xl':"rgba(0, 0, 0, 0.15) 0px 20px 20px 0px",
+        "1xl":"0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)"
       },
       colors: {
         blueTheme: {
