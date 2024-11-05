@@ -64,14 +64,14 @@ export default function PerfectDays() {
 
     return (
         <div className='bg-blueTheme-background'>
-            <div className='container-lg h-screen max-sm:px-4 overflow-hidden flex flex-col gap-12'>
+            <div className='container-lg h-screen max-sm:px-4 overflow-hidden flex flex-col gap-12 max-sm:gap-2'>
                 <div className='p-12 max-sm:p-8 flex items-center justify-between'>
                     <Link href='/packages' className='hover:scale-105 transition'>
                         <img src="/images/playground/builder/whiteArrow.svg" alt="" />
                     </Link>
 
                     <Link href='https://www.npmjs.com/package/perfect-days' target='_blank'>
-                        <h1 className='text-center m-auto max-sm:mt-24 text-white'>perfect-days</h1>
+                        <h1 className='text-center m-auto text-white'>perfect-days</h1>
                     </Link>
 
                     <div />
